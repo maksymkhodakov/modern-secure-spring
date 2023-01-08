@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+
+  mysql:
+    image: mysql
+    platform: linux/amd64
+    ports:
+      - 3307:3307
+    environment:
+      MYSQL_ROOT_HOST: localhost
+      MYSQL_ROOT_PASSWORD: adminpassword
+      MYSQL_DATABASE: userservice
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
